@@ -1,3 +1,70 @@
+## Requisitos
+
+Para executar este projeto, é necessário ter as seguintes ferramentas e recursos instalados em sua máquina:
+
+- [Composer](https://getcomposer.org/): É um gerenciador de pacotes para PHP que será usado para instalar as dependências do projeto.
+
+- [PHP v8.1](https://www.php.net/): A versão 8.1 do PHP ou superior é necessária para executar o projeto.
+
+- [MySQL v8.0](https://www.mysql.com/): O MySQL versão 8.0 ou superior é o banco de dados usado neste projeto.
+
+- [Node.js v14.17.6](https://nodejs.org/): Node.js é necessário para gerenciar pacotes JavaScript e para compilar recursos front-end.
+
+## Instruções de Instalação e Execução
+
+Siga estas etapas para clonar, instalar e executar o projeto:
+
+1. Clone o repositório para sua máquina local:
+
+```sh
+ git clone git@github.com:ViniciusBorgesdeAraujo/evento_musical.git
+ ```
+
+2. Acesse a pasta do projeto:
+
+```sh
+ cd evento_musical
+ ```
+
+3. Instale as dependências do projeto usando o Composer e o npm:
+
+```sh
+ composer install
+ npm install
+ ```
+
+4. Copie o arquivo `.env.example` para `.env`:
+
+```sh
+ cp .env.example .env
+ ```
+
+5. Gere a chave de aplicação:
+
+```sh
+ php artisan key:generate
+ ```
+
+6. Crie um link simbólico para a pasta de armazenamento:
+
+```sh
+ php artisan storage:link
+ ```
+
+7. Crie um banco de dados no MySQL:
+
+```sh
+ php artisan migrate
+ ```
+
+8. Execute o projeto:
+
+```sh
+ php artisan serve
+ ```
+
+Após seguir essas etapas, o projeto estará em execução. Você poderá acessá-lo em seu navegador visitando o endereço `http://localhost:8000` (ou outro endereço indicado no terminal após a execução do comando `php artisan serve`).
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
