@@ -2,6 +2,8 @@
 
 Para executar este projeto, é necessário ter as seguintes ferramentas e recursos instalados em sua máquina:
 
+- [XAMPP](https://www.apachefriends.org/index.html): O XAMPP é um pacote que inclui o servidor web Apache, o banco de dados MySQL, o PHP e outras ferramentas, tornando-o adequado para executar aplicativos web em ambiente de desenvolvimento.
+
 - [Composer](https://getcomposer.org/): É um gerenciador de pacotes para PHP que será usado para instalar as dependências do projeto.
 
 - [PHP v8.1](https://www.php.net/): A versão 8.1 do PHP ou superior é necessária para executar o projeto.
@@ -33,37 +35,23 @@ Siga estas etapas para clonar, instalar e executar o projeto:
  npm install
  ```
 
-4. Copie o arquivo `.env.example` para `.env`:
+4. Inicie o XAMPP e verifique se o Apache e o MySQL estão em execução.
 
-```sh
- cp .env.example .env
- ```
+5. Crie um banco de dados no MySQL.
 
-5. Gere a chave de aplicação:
-
-```sh
- php artisan key:generate
- ```
-
-6. Crie um link simbólico para a pasta de armazenamento:
-
-```sh
- php artisan storage:link
- ```
-
-7. Crie um banco de dados no MySQL:
+6. Execute as migrações do banco de dados:
 
 ```sh
  php artisan migrate
  ```
 
-8. Execute o projeto:
+11. Execute o projeto:
 
 ```sh
  php artisan serve
  ```
 
-Após seguir essas etapas, o projeto estará em execução. Você poderá acessá-lo em seu navegador visitando o endereço `http://localhost:8000` (ou outro endereço indicado no terminal após a execução do comando `php artisan serve`).
+Após seguir essas etapas, o projeto estará em execução no ambiente XAMPP. Você poderá acessá-lo em seu navegador visitando o endereço `http://localhost:8000` (ou outro endereço indicado no terminal após a execução do comando `php artisan serve`).
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
